@@ -1,0 +1,17 @@
+{
+    "PiCamPath": "/home/pi/picam/",
+    "PiCamParams": "--alsadev plughw:1,0 -o /run/shm/hls --rotation 180 --time --tcpout tcp://localhost:8181",
+    "HTTPListen": "0.0.0.0:8080",
+
+    "DisableMqtt": false,
+    "MqttServerAdd":  "REPLACE:mqttserver",
+    "MqttClientName": "REPLACE:picamac",
+
+    "TopicStop":       "REPLACE:mytopic",
+    "ValueStop":       "false",
+    "TopicStart":      "REPLACE:mytopic",
+    "ValueStart":      "false",
+    "TopicAuto":       "REPLACE:mytopic",
+    "TopicAutoStatus": "REPLACE:mytopic",
+    "TopicStatus":     "REPLACE:mytopic"
+}
